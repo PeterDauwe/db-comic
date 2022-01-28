@@ -1,0 +1,114 @@
+configuration {
+    modi:                           "drun";
+    display-drun:                   "Applications";
+    show-icons:                     true;
+    disable-history:                true;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+    font:                           "Noto sans 10";
+
+}
+
+@import "colors.rasi"
+
+* {
+  background-color: @al;
+  text-color: #eeeeee;
+}
+
+window {
+    
+    background-color:               #101010;
+    text-color:                      #eeeeee;
+	border:							0;
+	border-color:					 @ac;
+    border-radius:                  5px;
+	width:							900px;
+    location:                       southwest;
+    x-offset:                       8;
+    y-offset:                       -40;
+}
+
+prompt {
+	background-color: 				@transparent;
+	text-color: 					@foreground;
+}
+
+entry {
+    background-color:               #000000;
+    text-color:                     white;
+    placeholder:                    "Type to search";
+    margin:                         0% 0% 0% 0%;
+    padding:                        1.5% 5.5%;
+    expand:                         false;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ entry ];
+    padding:                        15px;
+    background-color:               #00000000;
+    text-color:                     @bg;
+    expand:                         false;
+    border:                         0% 0% 0% 0%;
+    border-radius:                  0px;
+    border-color:                   @ac;
+    margin:                         0% 0% 0% 0%;
+    padding:                        1.5%;
+
+}
+
+listview {
+    background-color:               @transparent;
+    padding:                        0px;
+    columns:                        5;
+    lines:                          3;
+    spacing:                        0px;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @al;
+    border:                         0% 0% 0% 0%;
+    border-radius:                  0% 0% 0% 0%;
+    border-color:                   @al;
+    children:                       [ inputbar, listview ];
+    spacing:                        0%;
+    padding:                        0%;
+}
+
+
+element {
+    background-color:               @al;
+    text-color:                     #eeeeee;
+    orientation:                    vertical;
+    border-radius:                  5%;
+    padding:                        2% 1% 2% 1%;
+}
+
+element-icon {
+    size:                           32px;
+    border:                         0px;
+}
+
+element-text {
+    expand:                         false;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         0.5% 0.5% -0.5% 0.5%;
+}
+
+element selected {
+    background-color:               @sa;
+    text-color:                     #ffffff;
+    border:                         0% 0% 0% 0%;
+    border-radius:                  12px;
+    border-color:                   @al;
+}
+
+element-text selected {
+    text-color:                     @ac;
+}
