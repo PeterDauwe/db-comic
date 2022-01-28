@@ -28,7 +28,7 @@ window {
     location:                       northwest;
     x-offset:                       8;
     y-offset:                       40;
-    background-image: url("/home/peter/.config/leftwm/themes/db-comic/backgrounds/100.jpg", width);
+    background-image: url("~/.config/leftwm/themes/db-comic/backgrounds/100.jpg", width);
 }
 
 prompt {
