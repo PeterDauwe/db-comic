@@ -1,9 +1,9 @@
-# Leftwm-theme db-scifi
+# Leftwm-theme db-comic
 
 
 # Get the theme to implement in your system
 
-	git clone https://github.com/PeterDauwe/db-scifi
+	git clone https://github.com/PeterDauwe/db-comic
 
 
 # Changed some stuff in up !!!!!!!!!!!!!
