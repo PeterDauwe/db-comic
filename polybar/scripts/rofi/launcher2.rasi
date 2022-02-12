@@ -31,7 +31,7 @@ prompt {
 
 window {
     transparency:                   "real";
-    background-color:               #101010;
+    background-color:               #101010A9;
     text-color:                     #eeeeee;
 	border:							0px;
 	border-color:					@ac;
@@ -41,7 +41,7 @@ window {
     location:                       center;
     x-offset:                        0%;
     y-offset:                        0%;
-    background-image: url("~/.config/leftwm/themes/db-comic/backgrounds/100.jpg", width);
+    background-image: url("~/.config/leftwm/themes/current/backgrounds/100.jpg", width);
 }
 
 
